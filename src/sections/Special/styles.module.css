@@ -1,0 +1,47 @@
+.special {
+  display: flex;
+  width: 100vw;
+  height: fit-content;
+  background: #dbceb2;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  color: #222222;
+  @media only screen and (max-width: 600px) {
+    .title {
+      font-size: 3rem;
+    }
+    .subtitle {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+    .text, .subtext {
+      width: 100%;
+      padding: 0 16px;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.title {
+  font-family: var(--font-medieval-sharp);
+  font-size: 78px;
+  line-height: 0.9;
+}
+
+.subtitle {
+  font-family: var(--font-cormorant);
+  font-size: 50px;
+}
+
+.text, .subtext {
+  width: 50%;
+  font-family: var(--font-cormorant);
+  font-size: 30px;
+}
+.subtext {
+  font-style: italic;
+  font-size: 25px;
+  text-align: center;
+  margin: 40px 0;
+}

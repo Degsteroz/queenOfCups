@@ -1,0 +1,50 @@
+.header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: #dbceb2;
+  display: flex;
+}
+
+.headerTextBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  color: #222;
+  .title {
+    font-family: var(--font-medieval-sharp);
+    font-size: 120px;
+  }
+  .description {
+    font-family: var(--font-cormorant);
+    font-size: 34px;
+  }
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+    align-items: center;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background: #dbceb2;
+    padding: 10px 20px;
+    border-radius: 15px;
+    .title {
+      font-size: 100px;
+    }
+    .description {
+      font-size: 45px;
+    }
+  }
+}
+
+.image {
+  width: auto;
+  height: 100%;
+  @media only screen and (max-width: 600px) {
+    width: auto;
+    height: 100vh;
+  }
+}

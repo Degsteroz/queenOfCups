@@ -1,0 +1,93 @@
+.composition {
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  position: relative;
+  background: #e1e1e1;
+  display: flex;
+  padding-top: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  flex: 0 0 500px;
+  background: #dbceb2;
+  position: relative;
+  padding: 20px;
+  border-radius: 30px;
+  align-items: center;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .cardImage {
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .cardTextBlock {
+    color: #222;
+    .title {
+      font-family: var(--font-medieval-sharp);
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-family: var(--font-cormorant);
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .meaning,
+    .advice {
+      font-family: var(--font-cormorant);
+      font-style: italic;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex: 0 0 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+    .cardTextBlock {
+      .title {
+        font-size: 20px;
+      }
+      .description {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.cardsWrapper {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 3;
+}
+.rabbits {
+  margin: 30px auto 0;
+  z-index: 2;
+}
