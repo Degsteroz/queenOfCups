@@ -29,6 +29,9 @@ export default function Composition() {
         <div className={styles.advice}>
           <span><strong>Совет:</strong> {card.advice}</span>
         </div>
+        <div className={styles.compound}>
+          <strong>Состав:</strong> {card.compound}
+        </div>
       </div>
     </div>
 

@@ -54,6 +54,7 @@
       font-size: 20px;
       margin-bottom: 10px;
     }
+    .compound,
     .meaning,
     .advice {
       font-family: var(--font-cormorant);
@@ -77,6 +78,10 @@
       }
     }
   }
+}
+
+.compound {
+  margin-top: 30px;
 }
 
 .cardsWrapper {
